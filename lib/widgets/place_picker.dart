@@ -402,7 +402,7 @@ class PlacePickerState extends State<PlacePicker> {
   /// This method gets the human readable name of the location. Mostly appears
   /// to be the road name and the locality.
   void reverseGeocodeLatLng(LatLng latLng) async {
-    try {
+//     try {
       final url = Uri.parse("https://maps.googleapis.com/maps/api/geocode/json?"
           "latlng=${latLng.latitude},${latLng.longitude}&"
           "language=${localizationItem.languageCode}&"
@@ -496,9 +496,9 @@ class PlacePickerState extends State<PlacePicker> {
           ..subLocalityLevel2 = AddressComponent(
               name: subLocalityLevel2, shortName: subLocalityLevel2);
       });
-    } catch (e) {
-      print(e);
-    }
+//     } catch (e) {
+//       print(e);
+//     }
   }
 
   /// Moves the camera to the provided location and updates other UI features to
