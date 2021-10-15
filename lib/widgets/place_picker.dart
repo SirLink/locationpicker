@@ -413,6 +413,7 @@ class PlacePickerState extends State<PlacePicker> {
       if (response.statusCode != 200) {
         throw Error();
       }
+      print(responseJson);
 
       final responseJson = jsonDecode(response.body);
 
